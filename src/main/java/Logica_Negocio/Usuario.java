@@ -36,4 +36,6 @@ public abstract class Usuario {
         this.Contra = Contra;
     }
 
+    public abstract boolean LogOn(String usuario, String contraseña);
+
 }

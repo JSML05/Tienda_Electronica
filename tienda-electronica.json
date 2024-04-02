@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tienda-electronica-1f7d8",
+  "private_key_id": "22d4b049262b48cb3e372beef37069c0cfea2722",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtd/WLdMBU6qVw\nGq+YEZwK5nMkEJ55IKnSXrgkwa2XfGaiGQs34kbyI0Zic1Gr5iAwmLbAhkTWQONo\n5zbQTw65MgZ9PrCA6EGAha/agYfa3P9tA5Wt4UWsWWkYFztbigW7gfUip13/qJnG\n6djbCCoyJTjdNbRwBLgaL1O+CcN9sv0ViRkwU5hygTBk9bb9wy1CgvjoVaUNzuQA\nwaSimWS/e0/d3CQBZFzT7OMpCJ94VMzFwUityXsVNM+xEDk33vKmptwLumwrgHNU\nsNWysNeSY5+lHXml4STuOcwruEprWHEsjBNx18vdQk9Vzwt6cDN0t9SMmvAUFJRt\nivZxgmP9AgMBAAECggEAEbQ/3+nHL2N7WwOo5DD352I5t3aSwJ4FdwOqcOXrckiE\nrl/hSzom2ij2KATI/cL7ig+BUgjiFv6Btyp8klS0lft1uhafK6jd9otZCp3/Cuap\n6FWzUw8TbfxPbjarcjOV/jB3SlV2kdSCoqXUjMDlPZTwRsi9D6m2TcXYGs8i9T3C\nPee4LEMo9wTAwZDiyYb/N2xm9Z1TJ2uQUulNREWikffCqw/Wr/pfqXj6Akdhj0HU\nKu6dsg1FbrDVSvmjyBeYDSSVsGqUlAu5B8KmLM+mj+cdxM+OrFjuKmhARdEI+ztl\n55dvM7svuddVtWNeuvqrSUUiRsrKbm/4qrn/wADAKQKBgQDcpb+sT/0aU/yyi6Lt\nYQqvs4HwcqP/pV6IWwlRXxzli5rNNth8QhjqLhW81LuuLiK7PvcCz58gYpe2w0GR\niAK49WWiHWk4x/0a7wCD9V6Ll8BMsg6k5fMGFX5JTQCmJvHeiFFGTpPEI26i/nHd\nrrQVVK/eFw7UPkExon5kq4LEQwKBgQDJQxWp3BotZ+lqSqcajtksWeuVyoXofGpy\nuJCkMMY0jwG7rJu9MAInnJrTIBFK9BPhOLUSHysQHdIlNZk4tBghhribvuYFluPu\ntH5psarcUEF7xwsgIIXK0qtVbHvt/2Q1FpdeJoRTQ6xyeCLR2VuUzSpMgFM8+/tg\nwC3tBJHSvwKBgHmL/OhpL94/AedBMMFfQcnEMwJHxLvhVw/6RknDAWIZ427ElcDt\nkFgAhwz8i17KH2vSpbOwt9HZPgX5zbbjm8xTsmb5mKskz/L0Ue5fTnPLZq1ZMOP5\noERrtqOefYsJzRdvNIZsZs4XTq0PSZ56zM0rV64aOZsFqFg1UTcXm/ONAoGAMBKs\nDASc5Beb812diIRyb1uTIBZd4ehF7N0U/4L+9PLrsQ5LrObYvOl1OdTBDKw8S2Gm\nLovvV0woM+cXkCnEUc3CLsFsZA1kqFHImCpt623oFk6245ehHY8wiZj+CR0lrGCX\nC1Ab71+Mw1LazlEixOo0nk1QlJKDutpsnd6njjUCgYEAiyjfjY3zNTgUWfQPmGht\nk98uY8P6O8HDULIGw/G2pq+I1KnpCBkv8U3MC7nRNtKQ8fOf4qDa07FpUjROX/gk\nmza9aAvIdFEvchupsF4zjIPXcrxd0tdbifgi1QNibrvh5sTpWiv23mr4nMzwcww2\nKLTLJ5XaM3GkSY0H4UJ3MhQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ec33e@tienda-electronica-1f7d8.iam.gserviceaccount.com",
+  "client_id": "107894535915779640610",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ec33e%40tienda-electronica-1f7d8.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
