@@ -11,7 +11,7 @@ package Logica_Negocio;
 public abstract class Usuario {
 
     //Declaracion de atributos
-    public String Usu, Contra;
+    private String Usu, Contra;
 
     //Constructor parametrizado
     public Usuario(String Usu, String Contra) {
