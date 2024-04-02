@@ -4,6 +4,8 @@
  */
 package Logica_Cliente;
 
+import Logica_Conexion.Conexion;
+
 /**
  *
  * @author jsml
@@ -15,6 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Conexion.Conectar();
     }
     
 }

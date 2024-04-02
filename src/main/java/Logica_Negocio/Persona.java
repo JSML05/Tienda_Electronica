@@ -4,6 +4,8 @@
  */
 package Logica_Negocio;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jsml
@@ -11,20 +13,22 @@ package Logica_Negocio;
 public class Persona {
 
     //Declaracion de atributos 
-    public String Nombre, Apellido, Direccion, Cedula, Producto, Uid;
+    public String Nombre, Apellido, Direccion, Cedula, Producto, Uid, Nom_img;
+    public ArrayList<Producto> productos;
 
     //Constructor no parametrizado
     public Persona() {
     }
 
     //Constructor parametrizado
-    public Persona(String Nombre, String Apellido, String Direccion, String Cedula, String Producto, String Uid) {
+    public Persona(String Nombre, String Apellido, String Direccion, String Cedula, String Producto, String Uid, String Nom_img) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Direccion = Direccion;
         this.Cedula = Cedula;
         this.Producto = Producto;
         this.Uid = Uid;
+        this.Nom_img = Nom_img;
     }
 
     //Setters y Getters
@@ -74,6 +78,22 @@ public class Persona {
 
     public void setUid(String Uid) {
         this.Uid = Uid;
+    }
+
+    public String getNom_img() {
+        return Nom_img;
+    }
+
+    public void setNom_img(String Nom_img) {
+        this.Nom_img = Nom_img;
+    }
+
+    public ArrayList<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(ArrayList<Producto> productos) {
+        this.productos = productos;
     }
 
 }
