@@ -37,22 +37,14 @@ public class HelperValidacion {
         ArrayList<Character> Lista_caracter = new ArrayList<>();
 
         Lista_caracter.add('@');
-        Lista_caracter.add(';');
-        Lista_caracter.add(',');
-        Lista_caracter.add('.');
-        Lista_caracter.add('+');
         Lista_caracter.add('-');
-        Lista_caracter.add('_');
-        Lista_caracter.add('*');
-        Lista_caracter.add('~');
         Lista_caracter.add('/');
-        Lista_caracter.add('"');
+        Lista_caracter.add(';');
         Lista_caracter.add(':');
+        Lista_caracter.add('"');
         Lista_caracter.add('!');
-        Lista_caracter.add('#');
-        Lista_caracter.add('=');
-        Lista_caracter.add('?');
-        Lista_caracter.add('¿');
+        Lista_caracter.add(' ');
+        
 
         for (int i = 0; i < Texto.length(); i++) {
             boolean flag = Character.isLetter(Texto.charAt(i));
