@@ -114,5 +114,31 @@ public class HelperValidacion {
             return false;
         }
     }
+    
+      public static int RetornarCEDireccionV2(String nombre) {
+        int ce = 0;
+        ArrayList<Character> Lista_caracter = new ArrayList<>();
+
+        Lista_caracter.add('@');
+        Lista_caracter.add('~');
+        Lista_caracter.add('/');
+        Lista_caracter.add('"');
+        Lista_caracter.add(':');
+        Lista_caracter.add('!');
+        Lista_caracter.add(';');
+
+        for (int i = 0; i < nombre.length(); i++) {
+            boolean flag = Character.isLetter(nombre.charAt(i));
+            if (!flag) {
+                for (int j = 0; j < Lista_caracter.size(); j++) {
+                    if (Lista_caracter.get(j).compareTo(nombre.charAt(i)) == 0) {
+                        ce++;
+                    }
+                }
+            }
+        }
+
+        return ce;
+    }
 
 }
