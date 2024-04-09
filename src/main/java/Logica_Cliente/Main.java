@@ -46,9 +46,10 @@ public class Main {
         do {
             System.out.println("Opciones: ");
             System.out.println("1. Registrar persona");
-            System.out.println("2. Mostrar los datos de una persona y los computadores que posee");
-            System.out.println("3. Mostrar toda la lista de personas");
-            System.out.println("4. Salir");
+            System.out.println("2. Visualizar personas nube");
+            System.out.println("3. Visualizar persona local");
+            System.out.println("4. Consultar personas nube");
+            System.out.println("5. Salir");
 
             do {
                 try {
@@ -300,8 +301,8 @@ public class Main {
                     int id = (int) (Math.random() * 100000);
 
                     objPersona = new Persona(Nombre, Apellido, Direccion, Cedula, producto, String.valueOf(id), Nom_img);
-                    Lista_personas.add(objPersona);
                     objPersona.setProductos(Productos);
+                    Lista_personas.add(objPersona);
                     Helpers.HelperRegistro.RegistrarPersonaNube(objPersona, id, producto);
                     producto = "";
                     break;
@@ -311,7 +312,7 @@ public class Main {
 
                 //Conexion.Conectar();
             }
-        } while (opc != 6);
+        } while (opc != 5);
 
     }
 
