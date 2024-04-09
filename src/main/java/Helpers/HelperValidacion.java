@@ -136,6 +136,8 @@ public class HelperValidacion {
         Lista_caracter.add(':');
         Lista_caracter.add('!');
         Lista_caracter.add(';');
+        Lista_caracter.add('#');
+        Lista_caracter.add('-');
 
         for (int i = 0; i < nombre.length(); i++) {
             boolean flag = Character.isLetter(nombre.charAt(i));

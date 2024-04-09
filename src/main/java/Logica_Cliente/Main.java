@@ -22,9 +22,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         Conexion.Conectar();
-                //Declaracion de variables
+        //Declaracion de variables
         //Persona
         String Nombre = "", Apellido = "", Direccion = "", Cedula = "", Producto = "", Uid = "", Nom_img = "";
 
@@ -173,12 +173,12 @@ public class Main {
                     //Fin direccion
 
                     //Inicio imagen
-                    System.out.println("Digite la direccion de la persona: ");
+                    System.out.println("Digite el nombre de la imagen de la persona: ");
                     Nom_img = scan.nextLine();
 
                     retorno_vac = HelperValidacion.ValidarVacio(Nom_img);
                     while (retorno_vac != 0) {
-                        System.out.println("Digite la direccion de la persona: ");
+                        System.out.println("Digite el nombre de la imagen de la persona: ");
                         Nom_img = scan.nextLine();
                         retorno_vac = HelperValidacion.ValidarVacio(Nom_img);
                     }
@@ -187,7 +187,7 @@ public class Main {
                     retorno_ce2 = HelperValidacion.RetornarCEDireccionV2(Nom_img);
 
                     while (retorno_ce2 != 0 || retorno_vac != 0) {
-                        System.out.println("Digite la direccion de la persona: ");
+                        System.out.println("Digite el nombre de la imagen de la persona: ");
                         Nom_img = scan.nextLine();
 
                         retorno_ce2 = HelperValidacion.RetornarCEDireccionV2(Nom_img);
@@ -198,7 +198,7 @@ public class Main {
 
                     do {
                         try {
-                            System.out.println("Numero de computadores que se desea añadirle: ");
+                            System.out.println("Numero de productos que se desea añadirle: ");
                             Num_pro = scan.nextInt();
 
                         } catch (InputMismatchException e) {
@@ -218,8 +218,8 @@ public class Main {
                             NombreProducto = scan.nextLine();
 
                             retorno_vac = HelperValidacion.ValidarVacio(NombreProducto);
-                            while (retorno_vac != 1) {
-                                System.out.println("Digite la marca del producto " + (i + 1) + " :");
+                            while (retorno_vac != 0) {
+                                System.out.println("Digite el nombre del producto " + (i + 1) + " :");
                                 NombreProducto = scan.nextLine();
                                 retorno_vac = HelperValidacion.ValidarVacio(NombreProducto);
                             }
@@ -228,8 +228,8 @@ public class Main {
                             retorno_num = HelperValidacion.RetornaValor(NombreProducto);
                             retorno_ce = HelperValidacion.RetornarValorCEV2(NombreProducto);
 
-                            while (retorno_num != 0 || retorno_ce != 0 || retorno_vac != 1) {
-                                System.out.println("Digite la marca del producto " + (i + 1) + " :");
+                            while (retorno_num != 0 || retorno_ce != 0 || retorno_vac != 0) {
+                                System.out.println("Digite el nombre del producto " + (i + 1) + " :");
                                 NombreProducto = scan.nextLine();
 
                                 retorno_vac = HelperValidacion.ValidarVacio(NombreProducto);
@@ -302,7 +302,9 @@ public class Main {
                     objPersona = new Persona(Nombre, Apellido, Direccion, Cedula, producto, String.valueOf(id), Nom_img);
                     Lista_personas.add(objPersona);
                     objPersona.setProductos(Productos);
-                    
+                    Helpers.HelperRegistro.RegistrarPersonaNube(objPersona, id, producto);
+                    producto = "";
+                    break;
 
                 default:
                     throw new AssertionError();
@@ -310,7 +312,7 @@ public class Main {
                 //Conexion.Conectar();
             }
         } while (opc != 6);
-        
+
     }
-    
+
 }
