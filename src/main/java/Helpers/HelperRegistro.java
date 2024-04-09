@@ -4,10 +4,43 @@
  */
 package Helpers;
 
+import Logica_Conexion.PersonaProvider;
+import Logica_Negocio.Persona;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author jsml
  */
 public class HelperRegistro {
-    
+
+    public static void RegistrarPersonaNube(Persona objper, int id, String producto) {
+        boolean res = PersonaProvider.RetornarUid(objper.getUid());
+        if (!res) {
+            try {
+                Map<String, Object> datos = new HashMap<>();
+                datos.put("uid", objper.getUid());
+                datos.put("Nombre", objper.getNombre());
+                datos.put("Apellido", objper.getApellido());
+                datos.put("Direccion", objper.getDireccion());
+                datos.put("Cedula", objper.getCedula());
+                datos.put("Productos", producto);
+                datos.put("Nom_img", objper.getApellido());
+                long inicio = System.currentTimeMillis();
+                PersonaProvider.GuardarPersona("Persona", String.valueOf(id), datos);
+                long fin = System.currentTimeMillis();//calcular el tiempo
+                HelperTiempo.RetornarTiempo(fin, inicio);
+                System.out.println("Persona guardada con exito con id" + "\t" + id);
+
+            } catch (Exception e) {
+                System.out.println("Error" + e.getMessage());
+            }
+        } else {
+            System.out.println("El iud ya existe");
+        }
+
+    }
+
 }
+
