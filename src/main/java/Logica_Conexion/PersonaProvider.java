@@ -4,6 +4,8 @@
  */
 package Logica_Conexion;
 
+import Logica_Negocio.Persona;
+import Logica_Negocio.Producto;
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.CollectionReference;
 import com.google.cloud.firestore.DocumentReference;
@@ -65,6 +67,67 @@ public class PersonaProvider {
         }
 
         return rta;
+
+    }
+
+    public static ArrayList CargarInfoPersona() {
+        Persona objPer;
+        Producto Produ;
+
+        ArrayList<Persona> Lspersona = new ArrayList<>();
+        ArrayList<Producto> Lsproducto = new ArrayList<>();
+
+        try {
+            CollectionReference persona = Conexion.db.collection("Persona");
+            ApiFuture<QuerySnapshot> querySnap = persona.get();
+
+            for (DocumentSnapshot document : querySnap.get().getDocuments()) {
+                objPer = new Persona(document.getString("Nombre"), document.getString("Apellido"),
+                        document.getString("Direccion"), document.getString("Cedula"),
+                        document.getString("Producto"), document.getString("Uid"),
+                        document.getString("Nom_img"));
+                Lspersona.add(objPer);
+
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        return Lspersona;
+    }
+
+    public static Persona CargarInfoPersonaCodigo(String codigo) {
+        Persona objPer;
+        Persona objPer1 = null;
+
+        ArrayList<Persona> Lspersona = new ArrayList<>();
+        ArrayList<Producto> Lsproducto = new ArrayList<>();
+
+        try {
+            CollectionReference persona = Conexion.db.collection("Persona");
+            ApiFuture<QuerySnapshot> querySnap = persona.get();
+
+            for (DocumentSnapshot document : querySnap.get().getDocuments()) {
+                objPer = new Persona(document.getString("Nombre"), document.getString("Apellido"),
+                        document.getString("Direccion"), document.getString("Cedula"),
+                        document.getString("Producto"), document.getString("Uid"),
+                        document.getString("Nom_img"));
+                Lspersona.add(objPer);
+
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        for (int i = 0; i < Lspersona.size(); i++) {
+            if (codigo.equals(Lspersona.get(i).getUid())) {
+                objPer1 = Lspersona.get(i);
+
+            }
+
+        }
+        return objPer1;
 
     }
 
