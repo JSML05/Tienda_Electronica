@@ -4,8 +4,11 @@
  */
 package Logica_Cliente;
 
+import Helpers.HelperImpresion;
+import Helpers.HelperTiempo;
 import Helpers.HelperValidacion;
 import Logica_Conexion.Conexion;
+import Logica_Conexion.PersonaProvider;
 import Logica_Negocio.Persona;
 import Logica_Negocio.Producto;
 import java.util.ArrayList;
@@ -39,6 +42,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int opc = 0;
         ArrayList<Persona> Lista_personas = new ArrayList<>();
+         ArrayList<Persona> lspersonasNube = new ArrayList<>();
         ArrayList<Producto> ProductosGlobal = null;
         Persona objPersona;
         Producto objProducto;
@@ -306,9 +310,27 @@ public class Main {
                     Helpers.HelperRegistro.RegistrarPersonaNube(objPersona, id, producto);
                     producto = "";
                     break;
-
-                default:
-                    throw new AssertionError();
+                case 2:
+                    lspersonasNube = PersonaProvider.CargarInfoPersona();
+                    HelperImpresion.ImprimirInfoPersonaNube(lspersonasNube);
+                    
+                    break;
+                    
+                case 3:
+                    
+                    break;
+                case 4: 
+                    String codigo = "";
+                    lspersonasNube = PersonaProvider.CargarInfoPersona();
+                    System.out.println("digite el uid a buscar");
+                    codigo= scan.nextLine();
+                    long inicio = System.currentTimeMillis();
+                    HelperImpresion.BuscarPersonaNube(lspersonasNube, codigo);
+                    long fin = System.currentTimeMillis();
+                    HelperTiempo.RetornarTiempo(fin, inicio);
+                     break;
+                    
+           
 
                 //Conexion.Conectar();
             }
