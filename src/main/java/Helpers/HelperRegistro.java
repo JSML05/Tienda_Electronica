@@ -17,7 +17,7 @@ public class HelperRegistro {
 
     public static void RegistrarPersonaNube(Persona objper, int id, String producto) {
         boolean res = PersonaProvider.RetornarUid(objper.getUid());
-        if (!res) {
+        if   (!res) {
             try {
                 Map<String, Object> datos = new HashMap<>();
                 datos.put("uid", objper.getUid());
