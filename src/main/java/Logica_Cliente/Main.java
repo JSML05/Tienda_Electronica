@@ -305,7 +305,7 @@ public class Main {
                     int id = (int) (Math.random() * 100000);
 
                     objPersona = new Persona(Nombre, Apellido, Direccion, Cedula, producto, String.valueOf(id), Nom_img);
-                    objPersona.setProductos(Productos);
+                    objPersona.setProducto(producto);
                     Lista_personas.add(objPersona);
                     Helpers.HelperRegistro.RegistrarPersonaNube(objPersona, id, producto);
                     producto = "";
@@ -331,8 +331,6 @@ public class Main {
                      break;
                     
            
-
-                //Conexion.Conectar();
             }
         } while (opc != 5);
 
