@@ -13,9 +13,10 @@ import java.util.Map;
  *
  * @author jsml
  */
-public class HelperRegistro {
+public class HelperRegistro implements IHelperRegistro{
 
-    public static void RegistrarPersonaNube(Persona objper, int id, String producto) {
+    @Override
+    public void RegistrarPersonaNube(Persona objper, int id, String producto) {
         boolean res = PersonaProvider.RetornarUid(objper.getUid());
         if   (!res) {
             try {
@@ -40,6 +41,11 @@ public class HelperRegistro {
             System.out.println("El iud ya existe");
         }
 
+    }
+    
+    public static void RegistrarPersonaNubeI(Persona objper, int id, String producto){
+        HelperRegistro objHelperRegistro = new HelperRegistro();
+        objHelperRegistro.RegistrarPersonaNube(objper, id, producto);
     }
 
 }
