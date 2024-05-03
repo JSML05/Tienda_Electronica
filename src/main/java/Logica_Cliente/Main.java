@@ -307,7 +307,7 @@ public class Main {
                     objPersona = new Persona(Nombre, Apellido, Direccion, Cedula, producto, String.valueOf(id), Nom_img);
                     objPersona.setProducto(producto);
                     Lista_personas.add(objPersona);
-                    Helpers.HelperRegistro.RegistrarPersonaNube(objPersona, id, producto);
+                    Helpers.HelperRegistro.RegistrarPersonaNubeI(objPersona, id, producto);
                     producto = "";
                     break;
                 case 2:

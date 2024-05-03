@@ -75,17 +75,26 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cantidad de productos");
 
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
 
         jButton1.setBackground(new java.awt.Color(0, 255, 204));
         jButton1.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Aceptar");
 
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
         jTextField3.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
         jTextField4.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
@@ -99,6 +108,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(0, 255, 204));
         jButton2.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Registrar Productos");
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -131,22 +141,34 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Nombre Imagen");
 
+        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
         jTextField6.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
         jTextField7.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
         jTextField8.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField9.setBackground(new java.awt.Color(255, 255, 255));
         jTextField9.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
         jTextField10.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
 
         jButton3.setBackground(new java.awt.Color(0, 255, 204));
         jButton3.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("Registrar Persona");
 
         jButton4.setBackground(new java.awt.Color(0, 255, 204));
         jButton4.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("Atras");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
