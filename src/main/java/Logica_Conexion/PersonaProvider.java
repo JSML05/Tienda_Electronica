@@ -84,7 +84,7 @@ public class PersonaProvider {
             for (DocumentSnapshot document : querySnap.get().getDocuments()) {
                 objPer = new Persona(document.getString("Nombre"), document.getString("Apellido"),
                         document.getString("Direccion"), document.getString("Cedula"),
-                        document.getString("Producto"), document.getString("Uid"),
+                        document.getString("Productos"), document.getString("uid"),
                         document.getString("Nom_img"));
                 Lspersona.add(objPer);
 
