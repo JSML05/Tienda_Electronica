@@ -4,6 +4,14 @@
  */
 package GUI_Admin;
 
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author jsml
@@ -13,10 +21,30 @@ public class MenuAdministrador extends javax.swing.JFrame {
     /**
      * Creates new form MenuAdministrador
      */
+    
+    public String pathc;
+    public String s;
     public MenuAdministrador() {
         initComponents();
+        Path currentRelativePath = Paths.get("");
+         s = currentRelativePath.toAbsolutePath().toString();
+         pathc = s + "\\Images\\"+"Background"+".jpg";
+        establecerImagen();
     }
 
+    
+    public void establecerImagen() {
+       
+        Image img = null;
+        try {
+            File file = new File(pathc);
+           img = ImageIO.read(new File(pathc));
+            //5. Setear la imagen al JLabel
+            jLabel2.setIcon(new ImageIcon(img));
+        } catch (IOException ioexception) {
+            System.err.println(ioexception);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,6 +63,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jButton3.setBackground(new java.awt.Color(7, 0, 164));
         jButton3.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
@@ -59,9 +88,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
         jLabel1.setText("Menu Opciones Admin");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Menu Opciones Admin");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
 
         jButton7.setBackground(new java.awt.Color(0, 255, 204));
         jButton7.setText("Registrar Persona ");
@@ -70,9 +101,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
 
         jButton8.setBackground(new java.awt.Color(0, 255, 204));
         jButton8.setText("Visualizar Persona ");
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
 
         jButton9.setBackground(new java.awt.Color(0, 255, 204));
         jButton9.setText("Buscar Persona ");
@@ -81,34 +114,8 @@ public class MenuAdministrador extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(190, 190, 190)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton7)
-                        .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(176, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel3)
-                .addGap(27, 27, 27)
-                .addComponent(jButton7)
-                .addGap(31, 31, 31)
-                .addComponent(jButton8)
-                .addGap(33, 33, 33)
-                .addComponent(jButton9)
-                .addContainerGap(113, Short.MAX_VALUE))
-        );
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 127, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -168,6 +175,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
