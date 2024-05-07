@@ -21,30 +21,30 @@ public class MenuAdministrador extends javax.swing.JFrame {
     /**
      * Creates new form MenuAdministrador
      */
-    
     public String pathc;
     public String s;
+
     public MenuAdministrador() {
         initComponents();
         Path currentRelativePath = Paths.get("");
-         s = currentRelativePath.toAbsolutePath().toString();
-         pathc = s + "\\Images\\"+"Background"+".jpg";
+        s = currentRelativePath.toAbsolutePath().toString();
+        pathc = s + "\\Images\\" + "Background" + ".jpg";
         establecerImagen();
     }
 
-    
     public void establecerImagen() {
-       
+
         Image img = null;
         try {
             File file = new File(pathc);
-           img = ImageIO.read(new File(pathc));
+            img = ImageIO.read(new File(pathc));
             //5. Setear la imagen al JLabel
             jLabel2.setIcon(new ImageIcon(img));
         } catch (IOException ioexception) {
             System.err.println(ioexception);
         }
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -105,6 +105,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
 
         jButton8.setBackground(new java.awt.Color(0, 255, 204));
         jButton8.setText("Visualizar Persona ");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
 
         jButton9.setBackground(new java.awt.Color(0, 255, 204));
@@ -125,18 +130,30 @@ public class MenuAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+        //GEN-FIRST:event_jButton7ActionPerformed
+        RegistrarPersonaAdministrador regisper = new RegistrarPersonaAdministrador();
+        regisper.setVisible(true);
+        dispose();    }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+        //GEN-FIRST:event_jButton3ActionPerformed
+        BuscarPersonaAdministrador busper = new BuscarPersonaAdministrador();
+        busper.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        //GEN-FIRST:event_jButton8ActionPerformed
+        VisualizarPersonaAdministrador visuper = new VisualizarPersonaAdministrador();
+        visuper.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+/* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
