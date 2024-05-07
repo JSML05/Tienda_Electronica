@@ -27,7 +27,7 @@ public class HelperRegistro implements IHelperRegistro{
                 datos.put("Direccion", objper.getDireccion());
                 datos.put("Cedula", objper.getCedula());
                 datos.put("Productos", producto);
-                datos.put("Nom_img", objper.getApellido());
+                datos.put("Nom_img", objper.getNom_img());
                 long inicio = System.currentTimeMillis();
                 PersonaProvider.GuardarPersona("Persona", String.valueOf(id), datos);
                 long fin = System.currentTimeMillis();//calcular el tiempo
