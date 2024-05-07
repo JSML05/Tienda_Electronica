@@ -4,10 +4,33 @@
  */
 package Logica_Negocio;
 
+import Helpers.HelperCifrado;
+
 /**
  *
  * @author jsml
  */
-public class Cliente {
+public class Cliente extends Usuario{
+    
+     public Cliente(String usuario, String constraseña) {
+        super(usuario, constraseña);
+    }
+
+    @Override
+    public boolean LogOn(String usuario, String contraseña) {
+        
+        boolean res = true;
+        String comprobarusuario = HelperCifrado.CifrarSHA256(getUsu());
+        String comprobarcontra = HelperCifrado.CifrarSHA256(getContra());
+        System.out.println("usu ci abs" + "\t" + comprobarusuario);
+        System.out.println("usu con abs" + "\t" + comprobarcontra);
+
+        if (comprobarusuario.compareTo(usuario) == 0 && comprobarcontra.compareTo(contraseña) == 0) {
+            return res;
+
+        } else {
+            return !res;
+        }
+    }
     
 }

@@ -4,9 +4,11 @@
  */
 package GUI_Admin;
 
+import GUI_Cliente.MenuCliente;
 import Helpers.HelperCifrado;
 import Logica_Conexion.Conexion;
 import Logica_Negocio.Administrador;
+import Logica_Negocio.Cliente;
 import Logica_Negocio.Usuario;
 import java.awt.Color;
 import java.awt.Image;
@@ -31,17 +33,20 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
     public String pathc;
     public String s;
 
-   public InicioSesionAdministrador() {
+    Usuario usuAdmin;
+    Usuario usuCliente;
+
+    public InicioSesionAdministrador() {
         initComponents();
         Conexion.Conectar();
         Path currentRelativePath = Paths.get("");
-         s = currentRelativePath.toAbsolutePath().toString();
-         pathc = s + "\\Images\\"+"Background"+".jpg";
+        s = currentRelativePath.toAbsolutePath().toString();
+        pathc = s + "\\Images\\" + "Background" + ".jpg";
         establecerImagen();
     }
-   
-   public void InicioSesion() {
-       
+
+    public void InicioSesion() {
+
         int res, res1;
         String usuario = jTextField4.getText();
         String contraseña = String.valueOf(jPasswordField1.getPassword());
@@ -50,45 +55,63 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
         res1 = Helpers.HelperValidacion.ValidarTodoContraseña(contraseña);
 
         if (res == 0 && res1 == 0) {
-           
-           
+
             String cifrarusu = HelperCifrado.CifrarSHA256(usuario);
             String cifrarcontra = HelperCifrado.CifrarSHA256(contraseña);
 
             System.out.println("usu ci inter" + "\t" + cifrarusu);
             System.out.println("usu con inter" + "\t" + cifrarcontra);
+            
+            if (usuario.equals("Admin")){
+                    usuAdmin=new Administrador("Admin", "12345");
+                    
+        }else if (usuario.equals("Cliente")){
+            usuCliente=new Cliente("Cliente", "12345");
+        }
+            if (usuCliente instanceof Cliente) {
+               boolean rta1 = usuCliente.LogOn(cifrarusu, cifrarcontra);
 
-            Usuario usuAdmin = new Administrador("Admin", "12345");
+            if (rta1) {
+                JOptionPane.showMessageDialog(null, "Bienvenido Cliente");
+                MenuCliente menu = new MenuCliente();
+                menu.setVisible(true);
+                dispose();
 
-            boolean rta = usuAdmin.LogOn(cifrarusu, cifrarcontra);
+            } else {
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida");
+
+            }
+            } else if(usuAdmin instanceof Usuario) {
+                 boolean rta = usuAdmin.LogOn(cifrarusu, cifrarcontra);
 
             if (rta) {
-                JOptionPane.showMessageDialog(null,"Bienvenido Administrador");
+                JOptionPane.showMessageDialog(null, "Bienvenido Administrador");
                 MenuAdministrador menu = new MenuAdministrador();
                 menu.setVisible(true);
                 dispose();
 
             } else {
-                JOptionPane.showMessageDialog(null,"Usuario o contraseña invalida");
-               
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida");
+
             }
-        } else {
+            }
+            
            
+        } else {
+
             jTextField1.setBorder(new LineBorder(Color.RED, 2));
             jPasswordField1.setBorder(new LineBorder(Color.RED, 2));
-           
-           
+
         }
 
     }
 
+    public void establecerImagen() {
 
-public void establecerImagen() {
-       
         Image img = null;
         try {
             File file = new File(pathc);
-           img = ImageIO.read(new File(pathc));
+            img = ImageIO.read(new File(pathc));
             //5. Setear la imagen al JLabel
             jLabel4.setIcon(new ImageIcon(img));
         } catch (IOException ioexception) {
@@ -165,7 +188,7 @@ public void establecerImagen() {
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Inicio de Sesion de Admin");
+        jLabel7.setText("Inicio de Sesion ");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
@@ -208,7 +231,7 @@ public void establecerImagen() {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-InicioSesion();
+        InicioSesion();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
