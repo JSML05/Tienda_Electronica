@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.io.FileInputStream;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.cloud.FirestoreClient;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
@@ -19,6 +22,7 @@ import com.google.firebase.cloud.FirestoreClient;
 public class Conexion {
 
     public static Firestore db;
+    private static Connection con = null;
 
     public static void Conectar() {
         try {
@@ -34,5 +38,19 @@ public class Conexion {
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
+    }
+
+    public static Connection getConnection() {
+        String url = "jdbc:mysql:// localhost:3306/prueba";
+        String user = "root";
+        String pass = "";
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(url, user, pass);
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return con;
     }
 }
