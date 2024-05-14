@@ -53,7 +53,7 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
             establecerImagen();
 
         }
-        if (osName.equals("Windows 10")) {
+        if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
             pathc = s + "\\Images\\" + "Background" + ".jpg";
             establecerImagen();
