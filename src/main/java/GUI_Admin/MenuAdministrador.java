@@ -23,13 +23,27 @@ public class MenuAdministrador extends javax.swing.JFrame {
      */
     public String pathc;
     public String s;
+    public String osName = System.getProperty("os.name").toLowerCase();
 
     public MenuAdministrador() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        pathc = s + "\\Images\\" + "Background" + ".jpg";
-        establecerImagen();
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background" + ".jpg";
+            establecerImagen();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+
+        }
+        if (osName.equals("Windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+        }
     }
 
     public void establecerImagen() {
@@ -129,21 +143,21 @@ public class MenuAdministrador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        //GEN-FIRST:event_jButton7ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {
+//GEN-FIRST:event_jButton7ActionPerformed
         RegistrarPersonaAdministrador regisper = new RegistrarPersonaAdministrador();
         regisper.setVisible(true);
         dispose();    }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        //GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {
+
         BuscarPersonaAdministrador busper = new BuscarPersonaAdministrador();
         busper.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        //GEN-FIRST:event_jButton8ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
+//GEN-FIRST:event_jButton8ActionPerformed
         VisualizarPersonaAdministrador visuper = new VisualizarPersonaAdministrador();
         visuper.setVisible(true);
         dispose();
@@ -153,7 +167,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-/* Set the Nimbus look and feel */
+        /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
