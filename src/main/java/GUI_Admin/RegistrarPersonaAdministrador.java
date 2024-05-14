@@ -34,6 +34,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
     public ArrayList<Persona> lspersona = new ArrayList<>();
     Persona objper;
     String producto = "";
+    public String osName = System.getProperty("os.name").toLowerCase();
     int numglobal = 0;
     int band = 0;
     public String pathc;
@@ -41,6 +42,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
 
     public RegistrarPersonaAdministrador() {
         initComponents();
+        System.out.println(osName);
         this.setSize(500, 500);
 
         jTextField5.setVisible(false);
@@ -52,9 +54,21 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel12.setVisible(false);
 
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        pathc = s + "\\Images\\" + "Background" + ".jpg";
-        establecerImagen();
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background" + ".jpg";
+            establecerImagen();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+        }
 
     }
 
