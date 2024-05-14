@@ -32,6 +32,7 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
      */
     public String pathc;
     public String s;
+    public String osName = System.getProperty("os.name").toLowerCase();
 
     Usuario usuAdmin;
     Usuario usuCliente;
@@ -39,10 +40,24 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
     public InicioSesionAdministrador() {
         initComponents();
         Conexion.Conectar();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        pathc = s + "\\Images\\" + "Background" + ".jpg";
-        establecerImagen();
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background" + ".jpg";
+            establecerImagen();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+
+        }
+        if (osName.equals("Windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+        }
     }
 
     public void InicioSesion() {
