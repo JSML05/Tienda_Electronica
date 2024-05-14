@@ -33,21 +33,38 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
      * Creates new form BuscarPersona
      */
     ArrayList<Persona> lspersonasnube;
-    Persona objper=null;
+    Persona objper = null;
     public String pathc;
-    public String pathc1 ;
-   
-      public String s;
-   public String s1;
+    public String pathc1;
 
+    public String s;
+    public String s1;
+
+    public String osName = System.getProperty("os.name").toLowerCase();
 
     public BuscarPersonaAdministrador() {
         initComponents();
-       Path currentRelativePath = Paths.get("");
-         s = currentRelativePath.toAbsolutePath().toString();
-         s1 = currentRelativePath.toAbsolutePath().toString();
-         pathc1 = s1 + "\\Images\\"+"Background"+".jpg";
-                establecerImagenBack();
+        Path currentRelativePath = Paths.get("");
+
+        s1 = currentRelativePath.toAbsolutePath().toString();
+        pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background" + ".jpg";
+            establecerImagenBack();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+        }
+
     }
 
     /**
@@ -119,48 +136,45 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
         HelperTiempo.RetornarTiempo(fin, inicio);
         String codigo = jTextField1.getText();
         objper = PersonaProvider.CargarInfoPersonaCodigo(codigo);
-        
-        if(objper==null)
-        {
-                 jTextField1.setBorder(new LineBorder(Color.RED, 2));
-            JOptionPane.showMessageDialog(null,"Cliente no encontrado");
-        }
-        else
-        {
+
+        if (objper == null) {
+            jTextField1.setBorder(new LineBorder(Color.RED, 2));
+            JOptionPane.showMessageDialog(null, "Cliente no encontrado");
+        } else {
             jTextField1.setBorder(new LineBorder(Color.BLACK, 1));
             String res = HelperImpresion.ImprimirInfoInterfazNube(lspersonasnube, codigo);
-        jTextPane1.setText(res);
-        pathc = s + "\\Images\\"+objper.getNom_img()+".jpg";
-                establecerImagen();
+            jTextPane1.setText(res);
+            pathc = s + "\\Images\\" + objper.getNom_img() + ".jpg";
+            establecerImagen();
         }
-    
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         MenuAdministrador menu = new MenuAdministrador();
+        MenuAdministrador menu = new MenuAdministrador();
         menu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void establecerImagen() {
-        
+
         Image img = null;
         try {
             File file = new File(pathc);
-           img = ImageIO.read(new File(pathc));
+            img = ImageIO.read(new File(pathc));
             //5. Setear la imagen al JLabel
             jLabel3.setIcon(new ImageIcon(img));
         } catch (IOException ioexception) {
             System.err.println(ioexception);
         }
     }
-    
-     public void establecerImagenBack() {
-        
+
+    public void establecerImagenBack() {
+
         Image img = null;
         try {
             File file = new File(pathc1);
-           img = ImageIO.read(new File(pathc1));
+            img = ImageIO.read(new File(pathc1));
             //5. Setear la imagen al JLabel
             jLabel4.setIcon(new ImageIcon(img));
         } catch (IOException ioexception) {
