@@ -29,7 +29,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
     ArrayList<Persona> lspersonasnube;
     public String pathc;
     public String s;
-     public String osName = System.getProperty("os.name").toLowerCase();
+    public String osName = System.getProperty("os.name").toLowerCase();
      
     public VisualizarPersonaAdministrador() {
         initComponents();
