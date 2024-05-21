@@ -101,7 +101,20 @@ public class PersonaDAO implements DAOInterfacePerson {
     @Override
 
     public void update(Persona per) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String query
+                = "update persona set Nombre=?,Apellido=?,Direccion=?,Cedula=?,Producto=?,Nom_img=?"
+                + "where Uid=?";
+        PreparedStatement ps = con.prepareStatement(query);
+
+        ps.setString(1, per.getNombre());
+        ps.setString(2, per.getApellido());
+        ps.setString(3, per.getDireccion());
+        ps.setString(4, per.getCedula());
+        ps.setString(5, per.getProducto());
+        ps.setString(6, per.getNom_img());
+        ps.setString(7, per.getUid());
+        ps.executeUpdate();
+
     }
 
     @Override
