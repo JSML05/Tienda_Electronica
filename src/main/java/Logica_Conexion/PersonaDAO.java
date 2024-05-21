@@ -39,8 +39,14 @@ public class PersonaDAO implements DAOInterfacePerson {
 
     @Override
 
-    public void delete(String id) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int delete(String id) throws SQLException {
+        String query
+                = "delete from persona where Uid =?";
+        PreparedStatement ps
+                = con.prepareStatement(query);
+        ps.setString(1, id);
+        int n = ps.executeUpdate();
+        return n;
     }
 
     @Override
