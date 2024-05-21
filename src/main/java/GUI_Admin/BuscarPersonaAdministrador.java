@@ -97,10 +97,9 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Codigo");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 72, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 255, 204));
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Buscar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,11 +111,10 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextPane1);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 121, 236, 164));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 69, 130, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 130, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 121, 121, 121));
 
         jButton1.setBackground(new java.awt.Color(0, 255, 204));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Atras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
