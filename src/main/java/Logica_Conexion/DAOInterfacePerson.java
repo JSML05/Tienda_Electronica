@@ -16,7 +16,7 @@ public interface DAOInterfacePerson {
 
     public int add(Persona per) throws SQLException;
 
-    public void delete(String id) throws SQLException;
+    public int delete(String id) throws SQLException;
 
     public Persona getPersona(String id) throws SQLException;
 
