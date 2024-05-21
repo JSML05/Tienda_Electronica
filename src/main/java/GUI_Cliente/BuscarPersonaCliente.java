@@ -101,7 +101,6 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 72, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 255, 204));
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Buscar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +115,6 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 69, 130, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 255, 204));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Atras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
