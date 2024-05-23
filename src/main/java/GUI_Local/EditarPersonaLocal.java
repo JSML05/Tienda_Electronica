@@ -6,6 +6,7 @@ package GUI_Local;
 
 import Logica_Conexion.PersonaDAO;
 import Logica_Negocio.Persona;
+import java.awt.Color;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.nio.file.Paths;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.border.LineBorder;
 
 /**
  *
@@ -187,7 +189,7 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
             jTextField12.setText(persona.getProducto());
             jTextField5.setText(persona.getNom_img());
             jButton2.setVisible(true);
-            jTextField13.setEditable(false);
+            jTextField13.setEditable(false);//no deja cambiar el codigo
             
             
         } catch (Exception e) {
@@ -198,7 +200,7 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-         String uid = jTextField13.getText();
+        String uid = jTextField13.getText();
         String nombre = jTextField14.getText();
         String apellido = jTextField15.getText();
         String direccion = jTextField6.getText();
@@ -206,6 +208,17 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
         String producto = jTextField12.getText();
         String nombreimg = jTextField5.getText();
         
+         int res, res1, res2, res3, res4, res5, res6;
+
+        res = Helpers.HelperValidacion.ValidarTodo(nombre);
+        res1 = Helpers.HelperValidacion.ValidarTodo(apellido);
+        res2 = Helpers.HelperValidacion.ValidarTodoLetra(cedula);
+        res3 = Helpers.HelperValidacion.ValidarTodoDireccion(direccion);
+        res4 = Helpers.HelperValidacion.ValidarTodoSerial(nombreimg);
+        res5 = Helpers.HelperValidacion.RetornarValorCEV2(producto);
+        res6 = Helpers.HelperValidacion.RetornarValorLetra(uid);
+        
+        if (res == 0 && res1 == 0 && res2 == 0 && res3 == 0 && res4 == 0 && res5 == 0 ) {
         try {
             per = new Persona(nombre, apellido, direccion, cedula, producto, uid, nombreimg);
             PersonaDAO dao = new PersonaDAO();
@@ -218,6 +231,33 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
         MenuLocal menu = new MenuLocal();
         menu.setVisible(true);
         dispose();
+        }else {
+          
+            if (res >= 1) {
+                jTextField14.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo nombre");
+            }
+            if (res1 >= 1) {
+                jTextField15.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo apellido");
+            }
+            if (res2 >= 1) {
+                jTextField11.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo cédula");
+            }
+            if (res3 >= 1) {
+                jTextField6.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo dirección");
+            }
+            if (res4 >= 1) {
+                jTextField12.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo nombre de la imagen");
+            }
+            if (res5 >= 1) {
+                jTextField5.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Revise el campo producto");
+            }
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
