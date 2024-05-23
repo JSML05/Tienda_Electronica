@@ -30,13 +30,14 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
     public String pathc;
     public String s;
     public String osName = System.getProperty("os.name").toLowerCase();
-     
+
     public VisualizarPersonaAdministrador() {
         initComponents();
+        System.out.println(osName);
         jTextPane1.setEditable(false);
         Path currentRelativePath = Paths.get("");
-        
-         if (osName.equals("linux")) {
+
+        if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
             pathc = s + "//Images//" + "Background" + ".jpg";
             establecerImagen();
@@ -53,8 +54,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
         }
     }
 
-    
-     public void establecerImagen() {
+    public void establecerImagen() {
 
         Image img = null;
         try {
@@ -66,6 +66,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
             System.err.println(ioexception);
         }
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -120,18 +121,16 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         lspersonasnube = PersonaProvider.CargarInfoPersona();
-         if(!lspersonasnube.isEmpty())
-         {
-         String info=HelperImpresion.ImprimirInfoInterfaz(lspersonasnube);
-         jTextPane1.setText(info);
-         }else
-         {
-             JOptionPane.showMessageDialog(null, "La lista se encuentra vacia!");
-         }
+        if (!lspersonasnube.isEmpty()) {
+            String info = HelperImpresion.ImprimirInfoInterfaz(lspersonasnube);
+            jTextPane1.setText(info);
+        } else {
+            JOptionPane.showMessageDialog(null, "La lista se encuentra vacia!");
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-         MenuAdministrador menu = new MenuAdministrador();
+        MenuAdministrador menu = new MenuAdministrador();
         menu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed

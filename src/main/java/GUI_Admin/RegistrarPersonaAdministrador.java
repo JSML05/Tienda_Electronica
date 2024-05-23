@@ -289,7 +289,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Registrar Producto");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 0, 110, 15);
+        jLabel1.setBounds(190, 10, 120, 15);
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -377,7 +377,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(325, 432, 140, 28);
+        jButton1.setBounds(270, 430, 180, 28);
 
         jButton2.setBackground(new java.awt.Color(0, 255, 204));
         jButton2.setForeground(new java.awt.Color(0, 0, 0));
@@ -388,7 +388,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(317, 165, 150, 28);
+        jButton2.setBounds(270, 170, 180, 28);
 
         jButton3.setBackground(new java.awt.Color(0, 255, 204));
         jButton3.setForeground(new java.awt.Color(0, 0, 0));
@@ -399,13 +399,13 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(378, 40, 80, 28);
+        jButton3.setBounds(350, 40, 100, 28);
 
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Registrar Persona");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(187, 217, 130, 15);
+        jLabel10.setBounds(200, 220, 130, 15);
 
         jButton4.setBackground(new java.awt.Color(0, 255, 204));
         jButton4.setForeground(new java.awt.Color(0, 0, 0));

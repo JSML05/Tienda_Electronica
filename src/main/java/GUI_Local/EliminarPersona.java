@@ -23,6 +23,7 @@ public class EliminarPersona extends javax.swing.JFrame {
     /**
      * Creates new form EliminarPersona
      */
+    public String osName = System.getProperty("os.name").toLowerCase();
     public String pathc;
     public String pathc1;
 
@@ -32,11 +33,27 @@ public class EliminarPersona extends javax.swing.JFrame {
     public EliminarPersona() {
         initComponents();
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        s1 = currentRelativePath.toAbsolutePath().toString();
-        pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
-        establecerImagenBack();
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "//Images//" + "Background" + ".jpg";
+            establecerImagenBack();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+        }
     }
 
     public void establecerImagenBack() {
