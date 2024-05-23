@@ -44,24 +44,22 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
 
     public BuscarPersonaAdministrador() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
 
-        s1 = currentRelativePath.toAbsolutePath().toString();
-        pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
-
         if (osName.equals("linux")) {
-            s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "//Images//" + "Background" + ".jpg";
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "//Images//" + "Background" + ".jpg";
             establecerImagenBack();
         } else if (osName.equals("windows 11")) {
-            s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
             establecerImagenBack();
 
         }
         if (osName.equals("windows 10")) {
-            s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
             establecerImagenBack();
         }
 

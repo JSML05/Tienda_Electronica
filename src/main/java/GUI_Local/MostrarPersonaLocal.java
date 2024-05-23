@@ -26,15 +26,30 @@ public class MostrarPersonaLocal extends javax.swing.JFrame {
     /**
      * Creates new form MostrarPersonaLocal
      */
+    public String osName = System.getProperty("os.name").toLowerCase();
     public String pathc;
     public String s;
 
     public MostrarPersonaLocal() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        pathc = s + "\\Images\\" + "Background" + ".jpg";
-        establecerImagen();
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background" + ".jpg";
+            establecerImagen();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            establecerImagen();
+        }
     }
 
     /**
@@ -63,8 +78,8 @@ public class MostrarPersonaLocal extends javax.swing.JFrame {
         jTextPane1 = new javax.swing.JTextPane();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,9 +89,9 @@ public class MostrarPersonaLocal extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 24, 344, 229));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Mostrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,9 +100,9 @@ public class MostrarPersonaLocal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 265, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(0, 255, 204));
+        jButton2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Volver");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,12 +110,12 @@ public class MostrarPersonaLocal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 265, -1, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 410, 300));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Mostrar Persona Local");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 0, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

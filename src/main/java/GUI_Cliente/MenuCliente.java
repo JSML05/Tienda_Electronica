@@ -27,6 +27,7 @@ public class MenuCliente extends javax.swing.JFrame {
 
     public MenuCliente() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
 
         if (osName.equals("linux")) {

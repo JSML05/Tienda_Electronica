@@ -43,6 +43,7 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
 
     public BuscarPersonaCliente() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
