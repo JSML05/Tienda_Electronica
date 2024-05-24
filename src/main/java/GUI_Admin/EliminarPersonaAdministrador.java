@@ -35,6 +35,7 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
     ArrayList<Persona> lspersonasnube;
     Persona objper = null;
 
+    public String osName = System.getProperty("os.name").toLowerCase();
     public String pathc;
     public String pathc1;
 
@@ -48,11 +49,27 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
 
     public EliminarPersonaAdministrador() {
         initComponents();
+        System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-        s = currentRelativePath.toAbsolutePath().toString();
-        s1 = currentRelativePath.toAbsolutePath().toString();
-        pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
-        establecerImagenBack();
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "//Images//" + "Background" + ".jpg";
+            establecerImagenBack();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            s1 = currentRelativePath.toAbsolutePath().toString();
+            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            establecerImagenBack();
+        }
     }
 
     /**
@@ -78,26 +95,26 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
         setTitle("Buscar Persona Administrador");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Eliminar Persona");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 14, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Codigo");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 72, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 204));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 204, 204));
+        jButton2.setBackground(new java.awt.Color(0, 255, 204));
+        jButton2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Eliminar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 68, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, -1, -1));
 
         jTextPane1.setEditable(false);
         jScrollPane1.setViewportView(jTextPane1);
@@ -106,9 +123,9 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 69, 130, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 121, 121, 121));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 204, 204));
+        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Atras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,17 +141,14 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         String uid = jTextField1.getText();
-        
+
         res = PersonaProvider.EliminarPersona("Persona", uid);
-        if(res==true)
-        {
+        if (res == true) {
             jTextPane1.setText("Cliente eliminado");
-        }else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "Cliente no encontrado");
         }
-        
-      
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
