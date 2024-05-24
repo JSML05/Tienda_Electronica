@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class Portada extends javax.swing.JFrame {
 

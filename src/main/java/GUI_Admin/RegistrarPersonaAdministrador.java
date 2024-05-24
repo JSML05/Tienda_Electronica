@@ -23,7 +23,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
 

@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class MostrarPersonaLocal extends javax.swing.JFrame {
 
