@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class MenuLocal extends javax.swing.JFrame {
 

@@ -25,7 +25,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class BuscarPersonaAdministrador extends javax.swing.JFrame {
 

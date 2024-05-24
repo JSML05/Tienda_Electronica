@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Asus
+ * @author jsml
  */
 public class PersonaDAO implements DAOInterfacePerson {
 

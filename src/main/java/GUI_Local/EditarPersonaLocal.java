@@ -19,7 +19,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author ACER
+ * @author jsml
  */
 public class EditarPersonaLocal extends javax.swing.JFrame {
 

@@ -25,7 +25,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class EliminarPersonaAdministrador extends javax.swing.JFrame {
 

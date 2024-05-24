@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Santiago Lopez
+ * @author jsml
  */
 public class BuscarPersonaLocal extends javax.swing.JFrame {
 
