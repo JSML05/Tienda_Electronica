@@ -39,17 +39,17 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
 
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "//Images//" + "Background" + ".jpg";
+            pathc = s + "//Images//" + "Background2" + ".jpg";
             establecerImagen();
         } else if (osName.equals("windows 11")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
             establecerImagen();
 
         }
         if (osName.equals(" windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
             establecerImagen();
         }
     }
@@ -86,35 +86,35 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Visualizar Personas");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 204));
-        jButton4.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Mostrar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, -1));
 
-        jButton5.setBackground(new java.awt.Color(0, 255, 204));
-        jButton5.setFont(new java.awt.Font("Nimbus Sans", 0, 15)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton5.setText("Atras");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, -1));
 
         jTextPane1.setEditable(false);
+        jTextPane1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane2.setViewportView(jTextPane1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 350, 180));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 430, 320));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 350, 200));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 460, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

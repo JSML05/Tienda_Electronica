@@ -24,25 +24,41 @@ public class Portada extends javax.swing.JFrame {
     public String osName = System.getProperty("os.name").toLowerCase();
     public String pathc;
     public String s;
+    
+     public String pathl;
+    public String l;
+    
 
     public Portada() {
         initComponents();
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
+        
+      
 
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "//Images//" + "Background2" + ".jpg";
+            l= currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background1" + ".jpg";
+            pathl= l +"//Images//" + "Logo" + ".jpg";
+            establecerLogo();
             establecerImagen();
+            
         } else if (osName.equals("windows 11")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background2" + ".jpg";
+            l= currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background1" + ".jpg";
+            pathl= l +"\\Images\\" + "Logo" + ".jpg";
+            establecerLogo();
             establecerImagen();
 
         }
         if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background2" + ".jpg";
+            l= currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background1" + ".jpg";
+            pathl= l +"\\Images\\" + "Logo" + ".jpg";
+            establecerLogo();
             establecerImagen();
         }
     }
@@ -66,32 +82,48 @@ public class Portada extends javax.swing.JFrame {
             System.err.println(ioexception);
         }
     }
+     public void establecerLogo() {
+
+        Image img = null;
+        try {
+            File file = new File(pathl);
+            img = ImageIO.read(new File(pathl));
+            //5. Setear la imagen al JLabel
+            jLabel3.setIcon(new ImageIcon(img));
+        } catch (IOException ioexception) {
+            System.err.println(ioexception);
+        }
+    }
+    
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(500, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Bienvenido");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 260, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
-        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Avanzar");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 100, 30));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 420, 340));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 110, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 350, 190));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 510, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -141,5 +173,6 @@ public class Portada extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

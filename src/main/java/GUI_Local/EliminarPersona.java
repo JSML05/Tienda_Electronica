@@ -39,19 +39,19 @@ public class EliminarPersona extends javax.swing.JFrame {
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
             s1 = currentRelativePath.toAbsolutePath().toString();
-            pathc1 = s1 + "//Images//" + "Background" + ".jpg";
+            pathc1 = s1 + "//Images//" + "Background2" + ".jpg";
             establecerImagenBack();
         } else if (osName.equals("windows 11")) {
             s = currentRelativePath.toAbsolutePath().toString();
             s1 = currentRelativePath.toAbsolutePath().toString();
-            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            pathc1 = s1 + "\\Images\\" + "Background2" + ".jpg";
             establecerImagenBack();
 
         }
         if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
             s1 = currentRelativePath.toAbsolutePath().toString();
-            pathc1 = s1 + "\\Images\\" + "Background" + ".jpg";
+            pathc1 = s1 + "\\Images\\" + "Background2" + ".jpg";
             establecerImagenBack();
         }
     }
@@ -95,47 +95,48 @@ public class EliminarPersona extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(java.awt.Color.white);
         jLabel1.setText("Digite el Uid");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 46, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
-        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Eliminar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 41, -1, -1));
+        jButton1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 70, 30));
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 204));
-        jButton2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Atras");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 256, -1, -1));
+        jButton2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 70, 30));
 
+        jTextField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 41, 132, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 132, -1));
 
-        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Eliminar Persona");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 8, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 110, 100));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
 
+        jTextPane1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane1.setViewportView(jTextPane1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 120, 235, 154));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 120, 127, 118));
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 310));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 250, 190));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

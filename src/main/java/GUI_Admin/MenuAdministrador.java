@@ -31,17 +31,17 @@ public class MenuAdministrador extends javax.swing.JFrame {
         Path currentRelativePath = Paths.get("");
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "//Images//" + "Background" + ".jpg";
+            pathc = s + "//Images//" + "Background2" + ".jpg";
             establecerImagen();
         } else if (osName.equals("windows 11")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
             establecerImagen();
 
         }
         if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
             establecerImagen();
         }
     }
@@ -105,48 +105,47 @@ public class MenuAdministrador extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Menu Opciones Admin");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
-        jButton7.setBackground(new java.awt.Color(0, 255, 204));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton7.setText("Registrar Persona ");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 240, -1));
 
-        jButton8.setBackground(new java.awt.Color(0, 255, 204));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton8.setText("Visualizar Persona ");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 240, -1));
 
-        jButton9.setBackground(new java.awt.Color(0, 255, 204));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton9.setText("Buscar Persona ");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 170, -1));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 240, -1));
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 204));
-        jButton4.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Eliminar Persona");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 170, -1));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 360));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 240, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -56,17 +56,17 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         Path currentRelativePath = Paths.get("");
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "//Images//" + "Background" + ".jpg";
+            pathc = s + "//Images//" + "BackgroundRPA" + ".jpg";
             establecerImagen();
         } else if (osName.equals("windows 11")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "BackgroundRPA" + ".jpg";
             establecerImagen();
 
         }
         if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background" + ".jpg";
+            pathc = s + "\\Images\\" + "BackgroundRPA" + ".jpg";
             establecerImagen();
         }
 
@@ -274,8 +274,8 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jTextField9 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -285,90 +285,103 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         setTitle("Registrar Persona Administrador");
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Registrar Producto");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 10, 120, 15);
+        jLabel1.setBounds(110, 0, 390, 40);
 
-        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 72, 90, 15);
+        jLabel2.setBounds(30, 80, 90, 16);
 
-        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Marca");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 110, 80, 15);
+        jLabel3.setBounds(30, 120, 80, 16);
 
-        jLabel4.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Serial");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 140, 70, 15);
+        jLabel4.setBounds(30, 150, 70, 16);
+
+        jTextField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(190, 69, 260, 28);
+        jTextField1.setBounds(230, 80, 180, 22);
+
+        jTextField2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(190, 100, 260, 28);
+        jTextField2.setBounds(230, 120, 180, 22);
+
+        jTextField3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(192, 132, 260, 28);
+        jTextField3.setBounds(230, 150, 180, 22);
 
         jSeparator1.setBackground(new java.awt.Color(0, 204, 204));
         jSeparator1.setForeground(new java.awt.Color(0, 204, 204));
         getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(0, 202, 490, 13);
+        jSeparator1.setBounds(0, 230, 490, 10);
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Cantidad Productos");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 43, 150, 15);
-        getContentPane().add(jTextField4);
-        jTextField4.setBounds(190, 40, 103, 28);
+        jLabel5.setBounds(10, 50, 240, 16);
 
-        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jTextField4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jTextField4);
+        jTextField4.setBounds(230, 50, 103, 22);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Nombre");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(0, 242, 80, 15);
+        jLabel6.setBounds(20, 270, 80, 16);
 
-        jLabel7.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Apellido");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 273, 80, 20);
+        jLabel7.setBounds(20, 300, 80, 20);
 
-        jLabel8.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Direccion");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(0, 326, 80, 15);
+        jLabel8.setBounds(20, 360, 80, 16);
 
-        jLabel9.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Cedula");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(0, 298, 80, 15);
+        jLabel9.setBounds(20, 330, 80, 16);
 
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
             }
         });
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(259, 239, 187, 28);
-        getContentPane().add(jTextField6);
-        jTextField6.setBounds(259, 267, 187, 28);
-        getContentPane().add(jTextField7);
-        jTextField7.setBounds(259, 295, 187, 28);
-        getContentPane().add(jTextField8);
-        jTextField8.setBounds(259, 323, 187, 28);
+        jTextField5.setBounds(250, 270, 187, 22);
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jTextField6);
+        jTextField6.setBounds(250, 300, 187, 22);
+
+        jTextField7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jTextField7);
+        jTextField7.setBounds(250, 330, 187, 22);
+
+        jTextField8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jTextField8);
+        jTextField8.setBounds(250, 360, 187, 22);
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Registrar Persona");
         jButton1.setActionCommand("Registrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -377,10 +390,9 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(270, 430, 180, 28);
+        jButton1.setBounds(280, 460, 180, 23);
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 204));
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Registrar Productos");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -388,10 +400,9 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(270, 170, 180, 28);
+        jButton2.setBounds(250, 190, 180, 27);
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 204));
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Aceptar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -399,16 +410,9 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(350, 40, 100, 28);
+        jButton3.setBounds(350, 50, 90, 20);
 
-        jLabel10.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Registrar Persona");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(200, 220, 130, 15);
-
-        jButton4.setBackground(new java.awt.Color(0, 255, 204));
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Atras");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -416,24 +420,27 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(6, 432, 76, 28);
+        jButton4.setBounds(30, 460, 72, 23);
 
-        jLabel11.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Registrar Persona");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(90, 230, 310, 40);
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Nombre Imagen");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(0, 357, 110, 15);
-        getContentPane().add(jTextField9);
-        jTextField9.setBounds(259, 351, 187, 28);
+        jLabel11.setBounds(10, 400, 170, 16);
 
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("jLabel12");
+        jTextField9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jTextField9);
+        jTextField9.setBounds(250, 400, 187, 22);
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(58, 404, 380, 15);
+        jLabel12.setBounds(60, 420, 220, 30);
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(-20, 0, 570, 500);
+        jLabel13.setBounds(0, 0, 510, 510);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
