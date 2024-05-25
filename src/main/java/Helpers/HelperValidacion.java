@@ -165,12 +165,16 @@ public class HelperValidacion {
     }
 
     public static int ValidarTodoContraseña(String cadena) {
-        int conteo = ValidarVacio(cadena);//falta la funcion RetornarCEVContraseña
+        int conteo = ValidarVacio(cadena);
         return conteo;
     }
 
     public static int ValidarTodo(String cadena) {
         int conteo = ValidarVacio(cadena) + RetornaValor(cadena) + RetornarValorCEV2(cadena);
+        return conteo;
+    }
+    public static int ValidarTodoProducto(String cadena) {
+        int conteo = ValidarVacio(cadena) + RetornarValorCEV2(cadena);
         return conteo;
     }
 
