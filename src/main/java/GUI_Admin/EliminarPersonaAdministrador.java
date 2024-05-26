@@ -49,6 +49,7 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
 
     public EliminarPersonaAdministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
 
@@ -86,13 +87,13 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jTextField1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Buscar Persona Administrador");
+        setTitle("Buscar Persona Admin en la nube ");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -119,10 +120,10 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextPane1);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 270, 200));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 121, 121));
 
         jTextField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 130, -1));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 121, 121));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Atras");
@@ -140,10 +141,20 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         String uid = jTextField1.getText();
-
+        objper =PersonaProvider.CargarInfoPersonaCodigo(uid);
         res = PersonaProvider.EliminarPersona("Persona", uid);
         if (res == true) {
             jTextPane1.setText("Cliente eliminado");
+           
+            if (objper.getNom_img()!= null) {
+                 pathc = s + "\\Images\\" + objper.getNom_img() + ".jpg";
+                establecerImagen();
+                 jLabel3.setBorder(new LineBorder(Color.RED, 2) );
+            }else{
+                jLabel3.setText("No hay imagen perro ");
+                jLabel3.setBorder(new LineBorder(Color.RED, 2) );
+            }
+           
         } else {
             JOptionPane.showMessageDialog(null, "Cliente no encontrado");
         }
@@ -156,7 +167,18 @@ public class EliminarPersonaAdministrador extends javax.swing.JFrame {
         menu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+    public void establecerImagen() {
 
+        Image img = null;
+        try {
+            File file = new File(pathc);
+            img = ImageIO.read(new File(pathc));
+            //5. Setear la imagen al JLabel
+            jLabel3.setIcon(new ImageIcon(img));
+        } catch (IOException ioexception) {
+            System.err.println(ioexception);
+        }
+    }
     public void establecerImagenBack() {
 
         Image img = null;

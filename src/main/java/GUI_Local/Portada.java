@@ -31,6 +31,7 @@ public class Portada extends javax.swing.JFrame {
 
     public Portada() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
         
@@ -105,6 +106,7 @@ public class Portada extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Portada");
         setMinimumSize(new java.awt.Dimension(500, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -123,7 +125,7 @@ public class Portada extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 110, 40));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 350, 190));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 510, 510));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

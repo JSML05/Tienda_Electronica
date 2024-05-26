@@ -43,6 +43,7 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
 
     public BuscarPersonaCliente() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
         if (osName.equals("linux")) {
@@ -86,7 +87,7 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Buscar Persona");
+        setTitle(" Buscar Persona en la nube ");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -123,8 +124,8 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, -1, -1));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 110, 110));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 130, 130));
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
 
         pack();

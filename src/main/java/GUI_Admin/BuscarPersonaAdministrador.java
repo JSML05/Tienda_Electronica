@@ -44,6 +44,7 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
 
     public BuscarPersonaAdministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
 
@@ -85,7 +86,7 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Buscar Persona Administrador");
+        setTitle("Buscar Persona Admin en la nube ");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -144,7 +145,7 @@ public class BuscarPersonaAdministrador extends javax.swing.JFrame {
             jTextField1.setBorder(new LineBorder(Color.BLACK, 1));
             String res = HelperImpresion.ImprimirInfoInterfazNube(lspersonasnube, codigo);
             jTextPane1.setText(res);
-            pathc = s + "\\Images\\" + objper.getNom_img() + ".jpg";
+            pathc = s1 + "\\Images\\" + objper.getNom_img() + ".jpg";
             establecerImagen();
         }
 

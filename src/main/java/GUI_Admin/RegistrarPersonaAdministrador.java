@@ -30,7 +30,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
     /**
      * Creates new form RegistrarPersona
      */
-    public ArrayList<Producto> lsproductos = new ArrayList<>();
+public ArrayList<Producto> lsproductos = new ArrayList<>();
     public ArrayList<Persona> lspersona = new ArrayList<>();
     Persona objper;
     String producto = "";
@@ -243,6 +243,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
             System.err.println(ioexception);
         }
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -282,7 +283,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Registrar Persona Administrador");
+        setTitle("Registrar Persona Admin en la nube");
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -333,6 +334,11 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jLabel5.setBounds(10, 50, 240, 16);
 
         jTextField4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField4);
         jTextField4.setBounds(230, 50, 103, 22);
 
@@ -437,8 +443,11 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         jTextField9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField9);
         jTextField9.setBounds(250, 400, 187, 22);
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel12.setForeground(java.awt.Color.white);
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(60, 420, 220, 30);
+        jLabel12.setBounds(60, 410, 410, 40);
         getContentPane().add(jLabel13);
         jLabel13.setBounds(0, 0, 510, 510);
 
@@ -471,6 +480,10 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -500,6 +513,7 @@ public class RegistrarPersonaAdministrador extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new RegistrarPersonaAdministrador().setVisible(true);

@@ -29,6 +29,7 @@ public class MenuLocal extends javax.swing.JFrame {
 
     public MenuLocal() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
 
@@ -81,6 +82,7 @@ public class MenuLocal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menu Local");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N

@@ -39,6 +39,7 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
 
     public InicioSesionAdministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
         Conexion.Conectar();
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
@@ -205,6 +206,7 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
         jLabel1.setText("Inicio de Sesion Administrador ");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inicio Sesion Admin en la nube ");
         setBackground(new java.awt.Color(102, 0, 153));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -242,7 +244,7 @@ public class InicioSesionAdministrador extends javax.swing.JFrame {
 
         jPasswordField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 190, -1));
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 450));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

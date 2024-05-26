@@ -75,6 +75,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Inicio Sesion Admin en la nube "/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="99" green="0" red="66" type="rgb"/>
     </Property>
@@ -208,7 +209,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="460" height="450"/>
+          <AbsoluteConstraints x="0" y="0" width="460" height="460"/>
         </Constraint>
       </Constraints>
     </Component>
