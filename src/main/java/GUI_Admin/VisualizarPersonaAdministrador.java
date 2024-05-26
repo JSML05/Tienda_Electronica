@@ -33,6 +33,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
 
     public VisualizarPersonaAdministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         jTextPane1.setEditable(false);
         Path currentRelativePath = Paths.get("");
@@ -84,6 +85,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Visualizar Admin en la nube");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -114,7 +116,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextPane1);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 350, 200));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 460, 480));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -27,6 +27,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
 
     public MenuAdministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
         if (osName.equals("linux")) {
@@ -103,6 +104,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
         jLabel1.setText("Menu Opciones Admin");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menu Admin en la nube");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
