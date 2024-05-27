@@ -79,6 +79,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         jButton3.setBackground(new java.awt.Color(7, 0, 164));
@@ -112,7 +113,9 @@ public class MenuAdministrador extends javax.swing.JFrame {
         jLabel3.setText("Menu Opciones Admin");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
+        jButton7.setBackground(new java.awt.Color(102, 0, 204));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Registrar Persona ");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +124,9 @@ public class MenuAdministrador extends javax.swing.JFrame {
         });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 240, -1));
 
+        jButton8.setBackground(new java.awt.Color(102, 0, 204));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("Visualizar Persona ");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,7 +135,9 @@ public class MenuAdministrador extends javax.swing.JFrame {
         });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 240, -1));
 
+        jButton9.setBackground(new java.awt.Color(102, 0, 204));
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Buscar Persona ");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,15 +146,22 @@ public class MenuAdministrador extends javax.swing.JFrame {
         });
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 240, -1));
 
+        jButton4.setBackground(new java.awt.Color(102, 0, 204));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Eliminar Persona");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 240, -1));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 240, -1));
+
+        jButton5.setBackground(new java.awt.Color(0, 255, 204));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton5.setText("Salir");
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 460, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -222,6 +236,7 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
