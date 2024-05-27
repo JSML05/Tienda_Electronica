@@ -156,7 +156,7 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 60, 30));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 90, 30));
 
         jLabel8.setBackground(new java.awt.Color(0, 0, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -172,7 +172,7 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 80, 30));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 110, 30));
 
         jTextField5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 130, -1));
@@ -254,7 +254,7 @@ public class EditarPersonaLocal extends javax.swing.JFrame {
         res2 = Helpers.HelperValidacion.ValidarTodoLetra(cedula);
         res3 = Helpers.HelperValidacion.ValidarTodoDireccion(direccion);
         res4 = Helpers.HelperValidacion.ValidarTodoSerial(nombreimg);
-        res5 = Helpers.HelperValidacion.RetornarValorCEV2(producto);
+        res5 = Helpers.HelperValidacion.ValidarCantidadProductos(producto);
         res6 = Helpers.HelperValidacion.RetornarValorLetra(uid);
 
         if (res == 0 && res1 == 0 && res2 == 0 && res3 == 0 && res4 == 0 && res5 == 0) {

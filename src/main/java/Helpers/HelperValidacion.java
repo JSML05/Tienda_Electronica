@@ -173,9 +173,19 @@ public class HelperValidacion {
         int conteo = ValidarVacio(cadena) + RetornaValor(cadena) + RetornarValorCEV2(cadena);
         return conteo;
     }
+
     public static int ValidarTodoProducto(String cadena) {
         int conteo = ValidarVacio(cadena) + RetornarValorCEV2(cadena);
         return conteo;
+    }
+
+    public static int ValidarCantidadProductos(String cadena) {
+        if (cadena.split(",").length >= 3) {
+            return 0;
+        } else {
+            return 1;
+        }
+
     }
 
 }

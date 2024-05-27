@@ -182,15 +182,16 @@ public class RegistarBDLocal extends javax.swing.JFrame {
         String producto = jTextField6.getText();
         String nombreimg = jTextField7.getText();
 
-        int res, res1, res2, res3, res4, res5, res6;
+        int res, res1, res2, res3, res4, res5, res6,res7;
 
         res = Helpers.HelperValidacion.ValidarTodo(nombre);
         res1 = Helpers.HelperValidacion.ValidarTodo(apellido);
         res2 = Helpers.HelperValidacion.ValidarTodoLetra(cedula);
         res3 = Helpers.HelperValidacion.ValidarTodoDireccion(direccion);
         res4 = Helpers.HelperValidacion.ValidarTodoSerial(nombreimg);
-        res5 = Helpers.HelperValidacion.ValidarTodoProducto(producto);
+        res5 = Helpers.HelperValidacion.ValidarCantidadProductos(producto);
         res6 = Helpers.HelperValidacion.ValidarTodoLetra(uid);
+         
 
         if (res == 0 && res1 == 0 && res2 == 0 && res3 == 0 && res4 == 0 && res5 == 0 && res6 == 0) {
             try {
@@ -234,6 +235,7 @@ public class RegistarBDLocal extends javax.swing.JFrame {
                 jTextField6.setBorder(new LineBorder(Color.RED, 2));
                 JOptionPane.showMessageDialog(null, "Revise el campo producto");
             }
+            
         }
 
 
