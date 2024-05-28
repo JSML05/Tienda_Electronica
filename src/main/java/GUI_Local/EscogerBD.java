@@ -31,7 +31,7 @@ public class EscogerBD extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
-
+       
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
             pathc = s + "//Images//" + "Background2" + ".jpg";
