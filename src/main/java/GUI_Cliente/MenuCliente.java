@@ -30,6 +30,10 @@ public class MenuCliente extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         System.out.println(osName);
         Path currentRelativePath = Paths.get("");
+        
+         s = currentRelativePath.toAbsolutePath().toString();
+        pathc = s + "//Images//" + "Background2" + ".jpg";
+        establecerImagen();
 
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
@@ -44,7 +48,7 @@ public class MenuCliente extends javax.swing.JFrame {
         }
         if (osName.equals(" windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
-            pathc = s + "\\Images\\" + "Background2" + ".jpg";
+            pathc = s + "\\Images\\" + "Background" + ".jpg";
             establecerImagen();
         }
     }

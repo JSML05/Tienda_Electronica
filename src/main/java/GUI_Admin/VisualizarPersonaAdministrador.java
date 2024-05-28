@@ -38,6 +38,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
         jTextPane1.setEditable(false);
         Path currentRelativePath = Paths.get("");
 
+
         if (osName.equals("linux")) {
             s = currentRelativePath.toAbsolutePath().toString();
             pathc = s + "//Images//" + "Background2" + ".jpg";
@@ -48,7 +49,7 @@ public class VisualizarPersonaAdministrador extends javax.swing.JFrame {
             establecerImagen();
 
         }
-        if (osName.equals(" windows 10")) {
+        if (osName.equals("windows 10")) {
             s = currentRelativePath.toAbsolutePath().toString();
             pathc = s + "\\Images\\" + "Background2" + ".jpg";
             establecerImagen();

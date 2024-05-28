@@ -174,6 +174,8 @@ public class EliminarPersona extends javax.swing.JFrame {
         } catch (Exception e) {
             System.out.println("Excepcion" + e);
         }
+        
+        
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

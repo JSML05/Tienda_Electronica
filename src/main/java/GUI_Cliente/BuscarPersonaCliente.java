@@ -59,7 +59,8 @@ public class BuscarPersonaCliente extends javax.swing.JFrame {
             establecerImagenBack();
 
         }
-        if (osName.equals(" windows 10")) {
+        if (osName.equals("windows 10")) {
+            System.out.println("Entro");
             s = currentRelativePath.toAbsolutePath().toString();
             s1 = currentRelativePath.toAbsolutePath().toString();
             pathc1 = s1 + "\\Images\\" + "Background2" + ".jpg";
