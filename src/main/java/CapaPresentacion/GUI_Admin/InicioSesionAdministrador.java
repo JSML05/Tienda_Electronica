@@ -1,0 +1,319 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package CapaPresentacion.GUI_Admin;
+
+import CapaPresentacion.Logica_Cliente.MenuCliente;
+import CapaLogicaNegocio.Helper.HelperCifrado;
+import CapaDatos.Logica_Conexion.Conexion;
+import CapaLogicaNegocio.Logica_Negocio.Administrador;
+import CapaLogicaNegocio.Logica_Negocio.Cliente;
+import CapaLogicaNegocio.Logica_Negocio.Usuario;
+import java.awt.Color;
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import javax.swing.border.LineBorder;
+
+/**
+ *
+ * @author jsml
+ */
+public class InicioSesionAdministrador extends javax.swing.JFrame {
+
+    /**
+     * Creates new form InicioSesionAdministrador
+     */
+    public String pathc;
+    public String s;
+    public String osName = System.getProperty("os.name").toLowerCase();
+
+    Usuario usuAdmin;
+    Usuario usuCliente;
+
+    public InicioSesionAdministrador() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+        Conexion.Conectar();
+        System.out.println(osName);
+        Path currentRelativePath = Paths.get("");
+
+        if (osName.equals("linux")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "//Images//" + "Background2" + ".jpg";
+            establecerImagen();
+        } else if (osName.equals("windows 11")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
+            establecerImagen();
+
+        }
+        if (osName.equals("windows 10")) {
+            s = currentRelativePath.toAbsolutePath().toString();
+            pathc = s + "\\Images\\" + "Background2" + ".jpg";
+            establecerImagen();
+        }
+    }
+
+    public void InicioSesion() {
+
+        int res, res1;
+        int bandera = 0;
+        String usuario = jTextField4.getText();
+        String contraseña = String.valueOf(jPasswordField1.getPassword());
+
+        res = CapaLogicaNegocio.Helper.HelperValidacion.ValidarTodo(usuario);
+        res1 = CapaLogicaNegocio.Helper.HelperValidacion.ValidarTodoContraseña(contraseña);
+
+        if (res == 0 && res1 == 0) {
+
+            String cifrarusu = HelperCifrado.CifrarSHA256(usuario);
+            String cifrarcontra = HelperCifrado.CifrarSHA256(contraseña);
+
+            System.out.println("usu ci inter" + "\t" + cifrarusu);
+            System.out.println("usu con inter" + "\t" + cifrarcontra);
+
+            if (usuario.equals("Admin")) {
+                usuAdmin = new Administrador("Admin", "12345");
+
+            } else if (usuario.equals("Cliente")) {
+                usuCliente = new Cliente("Cliente", "12345");
+
+            } else {
+
+                jTextField4.setBorder(new LineBorder(Color.RED, 2));
+                jPasswordField1.setBorder(new LineBorder(Color.RED, 2));
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida ");
+
+            }
+            if (usuCliente instanceof Cliente) {
+                boolean rta1 = usuCliente.LogOn(cifrarusu, cifrarcontra);
+
+                if (rta1) {
+                    JOptionPane.showMessageDialog(null, "Bienvenido Cliente");
+                    MenuCliente menu = new MenuCliente();
+                    menu.setVisible(true);
+                    dispose();
+
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida");
+
+                }
+            } else if (usuAdmin instanceof Usuario) {
+                boolean rta = usuAdmin.LogOn(cifrarusu, cifrarcontra);
+
+                if (rta) {
+                    JOptionPane.showMessageDialog(null, "Bienvenido Administrador");
+                    MenuAdministrador menu = new MenuAdministrador();
+                    menu.setVisible(true);
+                    dispose();
+
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida");
+
+                }
+            }
+
+        } else {
+
+            jTextField4.setBorder(new LineBorder(Color.RED, 2));
+            jPasswordField1.setBorder(new LineBorder(Color.RED, 2));
+            JOptionPane.showMessageDialog(null, "Usuario o contraseña invalida ");
+
+        }
+
+    }
+
+    public void establecerImagen() {
+
+        Image img = null;
+        try {
+            File file = new File(pathc);
+            img = ImageIO.read(new File(pathc));
+            //5. Setear la imagen al JLabel
+            jLabel4.setIcon(new ImageIcon(img));
+        } catch (IOException ioexception) {
+            System.err.println(ioexception);
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel4 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jTextField1.setBackground(new java.awt.Color(51, 0, 102));
+
+        jTextField2.setBackground(new java.awt.Color(51, 0, 102));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(7, 0, 164));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Iniciar Sesion");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel2.setText("Usuario:");
+
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel3.setText("Contraseña:");
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabel1.setText("Inicio de Sesion Administrador ");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inicio Sesion Admin en la nube ");
+        setBackground(new java.awt.Color(102, 0, 153));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Inicio de Sesión ");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Usuario:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Contraseña:");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, -1, -1));
+
+        jTextField4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 190, -1));
+
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setText("Iniciar Sesion");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
+
+        jPasswordField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255), new java.awt.Color(0, 204, 255)));
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 190, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 460));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        InicioSesion();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(InicioSesionAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(InicioSesionAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(InicioSesionAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(InicioSesionAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new InicioSesionAdministrador().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField4;
+    // End of variables declaration//GEN-END:variables
+}
