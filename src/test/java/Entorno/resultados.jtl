@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="374" it="0" lt="373" ct="322" ts="1757941969122" s="true" lb="Consulta personas" rc="200" rm="OK" tn="Grupo de Hilos 1-1" dt="text" by="77" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">shared:true, driver:com.mysql.cj.jdbc.Driver, url:jdbc:mysql://localhost:3323/prueba?useSSL=false&amp;serverTimezone=UTC, user:root</responseHeader>
+  <responseData class="java.lang.String">nombre
+daniel
+daniel
+Yilmar
+juan sebastian
+daniel
+sebastian
+brayan
+juan
+juan
+</responseData>
+  <samplerData class="java.lang.String">[Select Statement] SELECT nombre FROM persona;
+
+</samplerData>
+</sample>
+
+</testResults>
