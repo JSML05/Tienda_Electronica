@@ -36,6 +36,10 @@ public class PersonaDAO implements DAOInterfacePerson {
         ps.setString(7, per.getNom_img());
 
         int n = ps.executeUpdate();
+        
+        if (!con.getAutoCommit()) {
+            con.commit();
+        }
         return n;
     }
 
