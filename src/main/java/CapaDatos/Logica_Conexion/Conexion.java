@@ -41,12 +41,13 @@ public class Conexion {
     }
 
     public static Connection getConnection() {
-        String url = "jdbc:mysql:// localhost:3323/prueba";
+        String url = "jdbc:mysql://localhost:3323/prueba";
         String user = "root";
         String pass = "";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url, user, pass);
+            con.setAutoCommit(true);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
