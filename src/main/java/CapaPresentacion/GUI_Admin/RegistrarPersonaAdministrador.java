@@ -132,7 +132,7 @@ public ArrayList<Producto> lsproductos = new ArrayList<>();
             lsproductos.add(objproducto);
             band++;
 
-            JOptionPane.showMessageDialog(null, "Registrando producto" + "\t" + band + "de" + numglobal);
+            JOptionPane.showMessageDialog(null, "Registrando producto " + "\t" + band + " de " + numglobal);
 
             if (band == numglobal) {
 
