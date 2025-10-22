@@ -1,0 +1,232 @@
+{
+  "26823": {
+    "Apellido": "yayague",
+    "Cedula": "34567890'",
+    "Direccion": "santiago de cali",
+    "Nom_img": "yayague",
+    "Nombre": "xiomara",
+    "Productos": "bolso ,totto,345678dfio;caballo,criollo,34567fghjkl;",
+    "uid": "26823",
+    "firestore_id": "26823"
+  },
+  "329": {
+    "Apellido": "Giraldo",
+    "Cedula": "1105367574",
+    "Direccion": "asturias",
+    "Nom_img": "Giraldo",
+    "Nombre": "juan ",
+    "Productos": "camiseta real,adidas,23456rgh;guayos,nike,45678fghjk;",
+    "uid": "329",
+    "firestore_id": "329"
+  },
+  "36862": {
+    "Apellido": "sanchez",
+    "Cedula": "10549882",
+    "Direccion": "cr122",
+    "Nom_img": "sanchez",
+    "Nombre": "felipe ",
+    "Productos": "condon,deys,15451;nbj,jdf,4545;",
+    "uid": "36862",
+    "firestore_id": "36862"
+  },
+  "38650": {
+    "Apellido": "rosero",
+    "Cedula": "34567867890",
+    "Direccion": "hueco",
+    "Nom_img": "rosero",
+    "Nombre": "yilmar ",
+    "Productos": "vaper,hyde,3456fghj;vibrador,gigantones,4567fghj;",
+    "uid": "38650",
+    "firestore_id": "38650"
+  },
+  "41182": {
+    "Apellido": "pechuga",
+    "Cedula": "32435",
+    "Direccion": "timbio",
+    "Nom_img": "pechuga",
+    "Nombre": "milton",
+    "Productos": "antena,claro,324sdsdef;totuma,totumazo,4334dffggghfh;",
+    "uid": "41182",
+    "firestore_id": "41182"
+  },
+  "45822": {
+    "Apellido": "mu�oz",
+    "Cedula": "234567890",
+    "Direccion": "bello horizonte",
+    "Nom_img": "mu�oz",
+    "Nombre": "sebastian",
+    "Productos": "fufa,conejitas,120k;rines,motul,4567fghjk;",
+    "uid": "45822",
+    "firestore_id": "45822"
+  },
+  "52179": {
+    "Apellido": "browm",
+    "Cedula": "1324",
+    "Direccion": "pisame el callo",
+    "Nom_img": "browm",
+    "Nombre": "leymar",
+    "Productos": "pc,janus,audifonos;hyperx,hp,232434s;",
+    "uid": "52179",
+    "firestore_id": "52179"
+  },
+  "55982": {
+    "Apellido": "manquillo",
+    "Cedula": "1058547926",
+    "Direccion": "pandiguando",
+    "Nom_img": "manquillo",
+    "Nombre": "juan",
+    "Productos": "computador,acer,asdf123;computador,hp,asdf234;",
+    "uid": "55982",
+    "firestore_id": "55982"
+  },
+  "56690": {
+    "Apellido": "dfg",
+    "Cedula": "234",
+    "Direccion": "sdf",
+    "Nom_img": "dfg",
+    "Nombre": "dfg",
+    "Productos": "dfg,dfg,jhg;jhg,jhg,jhg;",
+    "uid": "56690",
+    "firestore_id": "56690"
+  },
+  "57620": {
+    "Apellido": "Villaguarin",
+    "Cedula": "234567643",
+    "Direccion": "Jardines",
+    "Nom_img": "image2",
+    "Nombre": "Eymer",
+    "Productos": "Parlante,Sony,12345SDFG;Termo,X,KJHGTR4567;",
+    "uid": "57620",
+    "firestore_id": "57620"
+  },
+  "57669": {
+    "Apellido": "Juan",
+    "Cedula": "1058547926",
+    "Direccion": "Manquillo",
+    "Nom_img": "Juan",
+    "Nombre": "57669",
+    "Productos": "Celular,Motorola,G84;",
+    "uid": "Celular,Motorola,G84;",
+    "firestore_id": "57669"
+  },
+  "62834": {
+    "Apellido": "morsilla",
+    "Cedula": "1066839260",
+    "Direccion": "cra 13",
+    "Nom_img": "image5",
+    "Nombre": "YIlmar",
+    "Productos": "CAja,CAJAsan,32454657;",
+    "uid": "62834",
+    "firestore_id": "62834"
+  },
+  "63760": {
+    "Apellido": "juan ",
+    "Cedula": "123456789",
+    "Direccion": "giraldo",
+    "Nom_img": "juan ",
+    "Nombre": "63760",
+    "Productos": "celular,asus,sdfghj67890';",
+    "uid": "celular,asus,sdfghj67890';",
+    "firestore_id": "63760"
+  },
+  "64022": {
+    "Apellido": "Villa",
+    "Cedula": "3456543",
+    "Direccion": "jardines",
+    "Nom_img": "image2",
+    "Nombre": "Daniel",
+    "Productos": "Audifono,indefinido,hjg5r;Laptop,Asus,kjhg765;",
+    "uid": "64022",
+    "firestore_id": "64022"
+  },
+  "69723": {
+    "Apellido": "Sanchez",
+    "Cedula": "1234567",
+    "Direccion": "Cra 23 #3-56",
+    "Nom_img": "Sanchez",
+    "Nombre": "Brayan Jose",
+    "Productos": "Barbie,Matel,12345dfg;Pulsera,Pandora,1234hgf;",
+    "uid": "69723",
+    "firestore_id": "69723"
+  },
+  "77013": {
+    "Apellido": "vilamiarin",
+    "Cedula": "203293920",
+    "Direccion": "portazo",
+    "Nom_img": "vilamiarin",
+    "Nombre": "daniel",
+    "Productos": "peine,sedal,32edsad;shampoo,pantene,324343;",
+    "uid": "77013",
+    "firestore_id": "77013"
+  },
+  "78411": {
+    "Apellido": "roseno",
+    "Cedula": "654",
+    "Direccion": "alfonsito",
+    "Nom_img": "roseno",
+    "Nombre": "jonier",
+    "Productos": "camello,arabe,434rtg;moto,honda,456yhg;",
+    "uid": "78411",
+    "firestore_id": "78411"
+  },
+  "79693": {
+    "Apellido": "azul",
+    "Cedula": "1302902394",
+    "Direccion": "carrera 12",
+    "Nom_img": "azul",
+    "Nombre": "verde",
+    "Productos": "audifonos,hyperx,2423435;teclado,razer,3435;",
+    "uid": "79693",
+    "firestore_id": "79693"
+  },
+  "86002": {
+    "Apellido": "Lara",
+    "Cedula": "37116833357",
+    "Direccion": "calle34",
+    "Nom_img": "image8",
+    "Nombre": "Danna",
+    "Productos": "Lampara,luminos,SFBRFRG75GFGF;",
+    "uid": "86002",
+    "firestore_id": "86002"
+  },
+  "91600": {
+    "Apellido": "Giraldo",
+    "Cedula": "87654",
+    "Direccion": "asturias",
+    "Nom_img": "image1",
+    "Nombre": "Juan Diego",
+    "Productos": "Mouse,dollarcity,345t6yg;Laptop,Asus,dfgh65;",
+    "uid": "91600",
+    "firestore_id": "91600"
+  },
+  "96371": {
+    "Apellido": "chimbachi",
+    "Cedula": "324234",
+    "Direccion": "donde matana",
+    "Nom_img": "chimbachi",
+    "Nombre": "alexk",
+    "Productos": "camisa de el farcelona,spotify,1324sd;guayo,pista,33434df;",
+    "uid": "96371",
+    "firestore_id": "96371"
+  },
+  "97033": {
+    "Apellido": "Muñoz",
+    "Cedula": "2347654",
+    "Direccion": "Penhouse",
+    "Nom_img": "image4",
+    "Nombre": "Sebastian",
+    "Productos": "Cerato,Kia,jhgf4567;Iphone,Android,34jhgf;",
+    "uid": "97033",
+    "firestore_id": "97033"
+  },
+  "99658": {
+    "Apellido": "Sanchez",
+    "Cedula": "236756554",
+    "Direccion": "nose",
+    "Nom_img": "image6",
+    "Nombre": "Brayan",
+    "Productos": "Pulsera,Pandora triple A,jhgf4567kmn;Maquina,Motila bien,cvn8;",
+    "uid": "99658",
+    "firestore_id": "99658"
+  }
+}

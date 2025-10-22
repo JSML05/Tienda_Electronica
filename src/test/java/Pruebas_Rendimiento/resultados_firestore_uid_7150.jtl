@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="379" it="0" lt="377" ct="0" ts="1761157121315" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-1" dt="text" by="1054" sby="0" ng="1" na="1">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="411" it="0" lt="411" ct="0" ts="1761157121702" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-1" dt="text" by="1054" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="196" it="0" lt="195" ct="0" ts="1761157122114" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-1" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="740" it="0" lt="739" ct="0" ts="1761157121804" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-2" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="324" it="0" lt="324" ct="0" ts="1761157122301" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-3" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="391" it="0" lt="391" ct="0" ts="1761157122310" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-1" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="186" it="0" lt="185" ct="0" ts="1761157122544" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-2" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="187" it="0" lt="187" ct="0" ts="1761157122702" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-1" dt="text" by="1054" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="426" it="0" lt="426" ct="0" ts="1761157122626" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-3" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="325" it="0" lt="325" ct="0" ts="1761157122799" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-4" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="400" it="0" lt="400" ct="0" ts="1761157122731" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-2" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="163" it="0" lt="163" ct="0" ts="1761157123053" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-3" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="186" it="0" lt="186" ct="0" ts="1761157123131" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-2" dt="text" by="1054" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="152" it="0" lt="152" ct="0" ts="1761157123299" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-5" dt="text" by="1055" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="426" it="0" lt="425" ct="0" ts="1761157123125" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-4" dt="text" by="1055" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="425" it="0" lt="425" ct="0" ts="1761157123217" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-3" dt="text" by="1054" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="139" it="0" lt="137" ct="0" ts="1761157123551" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-4" dt="text" by="1054" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="380" it="0" lt="379" ct="0" ts="1761157123317" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-2" dt="text" by="1054" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="163" it="0" lt="163" ct="0" ts="1761157123643" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-3" dt="text" by="1055" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="430" it="0" lt="429" ct="0" ts="1761157123452" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-5" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="153" it="0" lt="153" ct="0" ts="1761157123799" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-6" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="152" it="0" lt="152" ct="0" ts="1761157123883" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-5" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="435" it="0" lt="434" ct="0" ts="1761157123690" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-4" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="159" it="0" lt="158" ct="0" ts="1761157124125" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-4" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="416" it="0" lt="415" ct="0" ts="1761157123953" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-6" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="437" it="0" lt="437" ct="0" ts="1761157124036" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-5" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="160" it="0" lt="160" ct="0" ts="1761157124370" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-6" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="164" it="0" lt="164" ct="0" ts="1761157124473" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-5" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="416" it="0" lt="416" ct="0" ts="1761157124300" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-7" dt="text" by="1054" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="180" it="0" lt="180" ct="0" ts="1761157124717" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-7" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="426" it="0" lt="426" ct="0" ts="1761157124531" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-6" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="244" it="0" lt="244" ct="0" ts="1761157124797" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-8" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="149" it="0" lt="149" ct="0" ts="1761157124958" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-6" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="391" it="0" lt="391" ct="0" ts="1761157124897" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-7" dt="text" by="1055" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="328" it="0" lt="328" ct="0" ts="1761157125042" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-8" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="215" it="0" lt="213" ct="0" ts="1761157125289" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-7" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="234" it="0" lt="234" ct="0" ts="1761157125299" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-9" dt="text" by="1053" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="254" it="0" lt="254" ct="0" ts="1761157125370" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-8" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="369" it="0" lt="369" ct="0" ts="1761157125504" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-7" dt="text" by="1055" sby="0" ng="4" na="4">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="349" it="0" lt="349" ct="0" ts="1761157125534" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-9" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="291" it="0" lt="291" ct="0" ts="1761157125624" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-8" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="154" it="0" lt="154" ct="0" ts="1761157125798" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-10" dt="text" by="1054" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="269" it="0" lt="268" ct="0" ts="1761157125883" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-9" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="254" it="0" lt="254" ct="0" ts="1761157125916" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-8" dt="text" by="1055" sby="0" ng="3" na="3">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="424" it="0" lt="424" ct="0" ts="1761157125953" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-10" dt="text" by="1054" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="296" it="0" lt="296" ct="0" ts="1761157126152" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-9" dt="text" by="1054" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="145" it="0" lt="145" ct="0" ts="1761157126377" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-10" dt="text" by="1055" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="264" it="0" lt="263" ct="0" ts="1761157126449" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-9" dt="text" by="1055" sby="0" ng="2" na="2">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="428" it="0" lt="427" ct="0" ts="1761157126522" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-10" dt="text" by="1054" sby="0" ng="1" na="1">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+<httpSample t="135" it="0" lt="135" ct="0" ts="1761157126950" s="true" lb="Busqueda_Firestore_Documento_UID_7150" rc="200" rm="OK" tn="Grupo_Firestore_UID_7150 1-10" dt="text" by="1055" sby="0" ng="1" na="1">
+  <java.net.URL>https://firestore.googleapis.com/v1/projects/tienda-electronica-174f6/databases/(default)/documents/Persona/7150</java.net.URL>
+</httpSample>
+
+</testResults>
